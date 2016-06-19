@@ -4,6 +4,10 @@
   "description": "Play by Play Pluralsight",
   "main": "index.js",
   "scripts": {
+    "start": "pm2 start index.js cat_server.js dog_server.js",
+    "watch": "pm2 start index.js cat_server.js dog_server.js --watch",
+    "logs": "pm2 logs",
+    "kill": "pm2 kill",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
