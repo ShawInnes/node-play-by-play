@@ -10,16 +10,21 @@
     "kill": "pm2 kill",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/ShawInnes/play-by-play",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^2.0.0-rc.6",
     "body-parser": "^1.15.1",
+    "ejs": "^2.4.2",
     "express": "^4.14.0",
+    "express-session": "^1.13.0",
     "lodash": "^4.13.1",
     "mongoose": "^4.5.1",
-    "request": "^2.72.0",
-    "typescript": "^1.8.10"
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "redis": "^2.6.2",
+    "request": "^2.72.0"
   }
 }

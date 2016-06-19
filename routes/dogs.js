@@ -3,6 +3,7 @@ var Dog = require('../models/dog.js');
 
 module.exports = function(app) {
   app.get('/', function(req, res) {
+    console.log('responding to dog request');
     Dog.find(function(err, dogs) {
       if (err) {
         res.json({ info: 'Error Getting Dogs', error: err });

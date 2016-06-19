@@ -3,6 +3,7 @@ var Cat = require('../models/cat.js');
 
 module.exports = function(app) {
   app.get('/', function(req, res) {
+    console.log('responding to cat request');
     Cat.find(function(err, cats) {
       if (err) {
         res.json({ info: 'Error Getting Cats', error: err });
